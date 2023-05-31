@@ -4,14 +4,12 @@
 
 MODULE_LICENSE("MIT");
 
-static int __init hello_world(void)
-{
+static int __init hello_world(void) {
     printk(KERN_INFO "Hello World!\n");
     return 0;
 }
 
-static void __exit goodbye_world(void)
-{
+static void __exit goodbye_world(void) {
     printk(KERN_INFO "Goodbye world!\n");
 }
 
